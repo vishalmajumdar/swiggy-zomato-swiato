@@ -4,7 +4,7 @@
   "description": "backend of the application using express",
   "main": "app.js",
   "scripts": {
-    "test": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
