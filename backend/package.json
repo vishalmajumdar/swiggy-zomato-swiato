@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend of the application using express",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalmajumdar/swiggy-zomato-swiato.git"
+  },
+  "keywords": [
+    "swiggy",
+    "zomato",
+    "swiato"
+  ],
+  "author": "Vishal Majumdar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalmajumdar/swiggy-zomato-swiato/issues"
+  },
+  "homepage": "https://github.com/vishalmajumdar/swiggy-zomato-swiato#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
