@@ -1,4 +1,5 @@
 import React from "react";
+import { DrawerWithForm } from "./DrawerWithForm";
 import {
   Navbar,
   MobileNav,
@@ -71,25 +72,15 @@ export function NavbarDefault() {
           GitHub
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="text-md p-1 font-normal  hover:text-theme-color"
-      >
-        <a href="#" className=" font-poppins flex items-center">
-          Contact
-        </a>
-      </Typography>
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
+    <Navbar className="mx-auto py-2 px-4 lg:px-8 lg:py-4 rounded-none shadow-sm">
       <div className="container mx-auto flex items-center justify-between text-theme-color">
         <Typography
           as="a"
-          href="#"
+          href="/"
           className="mr-4 cursor-pointer py-1.5 font-medium text-4xl font-playball"
         >
           Swiato
