@@ -1,4 +1,4 @@
-import Banner from "./Banner";
+// import Banner from "./Banner";
 import { Button } from "@material-tailwind/react";
 
 const Home = () => {
