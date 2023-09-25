@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      playball: ["Playball", "cursive"],
+      playfairDisplay: ["Playfair Display", "serif"],
+    },
+    extend: {
+      colors: {
+        "theme-color": "#aa0055",
+      },
+    },
   },
   plugins: [],
-};
+});

@@ -6,17 +6,13 @@ font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
 */
 
-:root {
-  --theme-color: #aa0055;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    font-family: "Poppins", sans-serif;
+    @apply font-poppins;
   }
 
   h1,
@@ -25,13 +21,9 @@ font-family: 'Poppins', sans-serif;
   h4,
   h5,
   h6 {
-    font-family: "Playfair Display", serif;
-    color: var(--theme-color);
+    @apply font-playfairDisplay text-theme-color;
   }
-
-  .logo {
-    font-family: "Playball", cursive;
-    font-size: 48px;
-    color: var(--theme-color);
+  button {
+    @apply !bg-theme-color;
   }
 }
