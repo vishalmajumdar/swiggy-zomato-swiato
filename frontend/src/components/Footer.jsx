@@ -1,3 +1,4 @@
+// This is the Footer Component directly taken from Material Tailwind with some customizations
 import { Typography } from "@material-tailwind/react";
 
 const LINKS = [
@@ -15,19 +16,21 @@ const LINKS = [
   },
 ];
 
+// Getting year dynamically for Footer Copyright
 const currentYear = new Date().getFullYear();
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="relative w-full bg-[#f8fafc] pt-6">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2">
+          {/* Logo/Site Title */}
           <div>
             <Typography
               variant="h5"
               className="font-playball text-4xl lg:text-8xl md:text-6xl text-theme-color flex items-center justify-center lg:justify-start"
             >
-              Swiato
+              <a href="/"> Swiato</a>
             </Typography>
             <Typography
               variant="h6"
@@ -36,6 +39,7 @@ export function Footer() {
               Swiggy + Zomato
             </Typography>
           </div>
+          {/* Extra Links */}
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
@@ -50,7 +54,7 @@ export function Footer() {
                   <li key={link}>
                     <Typography
                       as="a"
-                      href="#"
+                      href="/"
                       color="gray"
                       className="font-poppins py-1.5 font-normal hover:text-theme-color transition-transform hover:scale-105 duration-500"
                     >
@@ -63,6 +67,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-6 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+          {/* Copyright Section */}
           <Typography
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 font-poppins"
@@ -73,10 +78,11 @@ export function Footer() {
             </a>{" "}
             | All Rights Reserved.
           </Typography>
+          {/* Social Links and Icons */}
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography
               as="a"
-              href="#"
+              href="/"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -94,7 +100,7 @@ export function Footer() {
             </Typography>
             <Typography
               as="a"
-              href="#"
+              href="/"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -112,7 +118,7 @@ export function Footer() {
             </Typography>
             <Typography
               as="a"
-              href="#"
+              href="/"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
@@ -126,7 +132,7 @@ export function Footer() {
             </Typography>
             <Typography
               as="a"
-              href="#"
+              href="/"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg

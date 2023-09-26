@@ -1,3 +1,4 @@
+// This is Oder Form component made using MaterialUI and TailWind
 import React from "react";
 import {
   Button,
@@ -8,10 +9,9 @@ import {
   CardFooter,
   Typography,
   Input,
-  Checkbox,
 } from "@material-tailwind/react";
 
-export function DialogWithForm(props) {
+export default function OrderForm(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
 

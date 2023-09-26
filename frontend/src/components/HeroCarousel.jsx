@@ -1,12 +1,15 @@
+// This is the Hero Carousel component in which several components have been taken from material tailwind.
 import {
   Carousel,
   Typography,
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { DialogWithForm } from "./DialogWithForm.jsx";
 
-export function CarouselWithContent() {
+// importing another component for popup or dialogue box on clicking the button
+import OrderForm from "./OrderForm";
+
+export function HeroCarousel() {
   return (
     <Carousel
       navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -99,7 +102,7 @@ export function CarouselWithContent() {
               delectable dishes.
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
-              <DialogWithForm label="Order Now"></DialogWithForm>
+              <OrderForm label="Order Now"></OrderForm>
               <Button
                 size="md"
                 color="white"
@@ -135,7 +138,7 @@ export function CarouselWithContent() {
               Experience the perfect blend of taste and ambiance.
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
-              <DialogWithForm label="Book a Table"></DialogWithForm>
+              <OrderForm label="Book a Table"></OrderForm>
 
               <Button
                 size="md"
@@ -172,7 +175,7 @@ export function CarouselWithContent() {
               Craving your favorite meal at home? We've got you covered.
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
-              <DialogWithForm label="Order Delivery"></DialogWithForm>
+              <OrderForm label="Order Delivery"></OrderForm>
 
               <Button
                 size="md"
