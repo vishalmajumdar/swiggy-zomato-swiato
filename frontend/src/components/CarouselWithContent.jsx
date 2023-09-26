@@ -22,9 +22,9 @@ export function CarouselWithContent() {
         </div>
       )}
       loop="true"
-      //   autoplay="false"
-      //   autoplayDelay={2500}
-      transition={{ duration: 1.5 }}
+      autoplay="false"
+      autoplayDelay={2500}
+      //   transition={{ duration: 1.5 }}
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"
