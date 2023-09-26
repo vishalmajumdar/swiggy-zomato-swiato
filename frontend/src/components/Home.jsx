@@ -1,8 +1,12 @@
-// import Banner from "./Banner";
+import Banner from "./Banner";
 import { Button } from "@material-tailwind/react";
 
 const Home = () => {
-  return <div className="h-[400px] flex items-center justify-center">Home</div>;
+  return (
+    <div>
+      <Banner></Banner>
+    </div>
+  );
 };
 
 export default Home;
