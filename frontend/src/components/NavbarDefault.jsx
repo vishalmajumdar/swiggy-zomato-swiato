@@ -38,7 +38,7 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="text-md font-poppins p-1 font-normal hover:text-theme-color"
+        className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
         <a href="#" className="flex items-center">
           About
@@ -48,7 +48,7 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="text-md p-1 font-normal"
+        className="transition-transform hover:scale-105 duration-500 first-line:text-md p-1 font-normal"
       >
         <a
           href="https://www.geeksforgeeks.org/courses/full-stack-node"
@@ -62,7 +62,7 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="text-md font-poppins p-1 font-normal  hover:text-theme-color"
+        className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
         <a
           href="https://github.com/vishalmajumdar/swiggy-zomato-swiato"
@@ -87,7 +87,7 @@ export function NavbarDefault() {
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button
-          className="font-poppins !hidden lg:!inline-block text-sm"
+          className="transition-transform hover:scale-105 duration-500 font-poppins !hidden lg:!inline-block text-sm"
           size="sm"
         >
           <span className="flex items-center align-middle">
