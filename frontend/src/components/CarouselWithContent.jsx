@@ -4,6 +4,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { DialogWithForm } from "./DialogWithForm.jsx";
 
 export function CarouselWithContent() {
   return (
@@ -23,7 +24,7 @@ export function CarouselWithContent() {
       )}
       loop={true}
       autoplay={true}
-      autoplayDelay={2500}
+      autoplayDelay={4500}
       //   transition={{ duration: 1.5 }}
       prevArrow={({ handlePrev }) => (
         <IconButton
@@ -98,13 +99,7 @@ export function CarouselWithContent() {
               delectable dishes.
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
-              <Button
-                size="md"
-                variant="outlined"
-                className="!bg-theme-color font-poppins tracking-wider text-white"
-              >
-                Order Now
-              </Button>
+              <DialogWithForm label="Order Now"></DialogWithForm>
               <Button
                 size="md"
                 color="white"
@@ -140,13 +135,8 @@ export function CarouselWithContent() {
               Experience the perfect blend of taste and ambiance.
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
-              <Button
-                size="md"
-                variant="outlined"
-                className="!bg-theme-color font-poppins tracking-wider text-white"
-              >
-                Book a Table
-              </Button>
+              <DialogWithForm label="Book a Table"></DialogWithForm>
+
               <Button
                 size="md"
                 color="white"
@@ -182,13 +172,8 @@ export function CarouselWithContent() {
               Craving your favorite meal at home? We've got you covered.
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
-              <Button
-                size="md"
-                variant="outlined"
-                className="!bg-theme-color font-poppins tracking-wider text-white"
-              >
-                Order Delivery
-              </Button>
+              <DialogWithForm label="Order Delivery"></DialogWithForm>
+
               <Button
                 size="md"
                 color="white"
