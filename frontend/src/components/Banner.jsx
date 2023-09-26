@@ -1,4 +1,4 @@
-import { CarouselWithContent } from "./CarouselWithContent";
+import { CarouselWithContent } from "./CarouselWithContent.jsx";
 const Banner = () => {
   return (
     <div id="banner">

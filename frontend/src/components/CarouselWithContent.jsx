@@ -21,8 +21,8 @@ export function CarouselWithContent() {
           ))}
         </div>
       )}
-      loop="true"
-      autoplay="false"
+      loop={true}
+      autoplay={true}
       autoplayDelay={2500}
       //   transition={{ duration: 1.5 }}
       prevArrow={({ handlePrev }) => (
@@ -100,8 +100,8 @@ export function CarouselWithContent() {
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
               <Button
                 size="md"
-                variant="outline"
-                className="!bg-theme-color font-poppins tracking-wider"
+                variant="outlined"
+                className="!bg-theme-color font-poppins tracking-wider text-white"
               >
                 Order Now
               </Button>
@@ -142,8 +142,8 @@ export function CarouselWithContent() {
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
               <Button
                 size="md"
-                variant="outline"
-                className="!bg-theme-color font-poppins tracking-wider"
+                variant="outlined"
+                className="!bg-theme-color font-poppins tracking-wider text-white"
               >
                 Book a Table
               </Button>
@@ -184,8 +184,8 @@ export function CarouselWithContent() {
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
               <Button
                 size="md"
-                variant="outline"
-                className="!bg-theme-color font-poppins tracking-wider"
+                variant="outlined"
+                className="!bg-theme-color font-poppins tracking-wider text-white"
               >
                 Order Delivery
               </Button>
