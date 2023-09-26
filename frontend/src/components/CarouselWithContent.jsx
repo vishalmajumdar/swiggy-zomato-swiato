@@ -85,14 +85,14 @@ export function CarouselWithContent() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-2xl md:text-4xl lg:text-5xl"
+              className="font-poppins mb-4 text-2xl md:text-4xl lg:text-5xl"
             >
               Discover the Flavors of Excellence
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-6 opacity-80"
+              className="font-poppins mb-6 opacity-80"
             >
               Indulge in a culinary journey like no other. Explore a world of
               delectable dishes.
@@ -128,14 +128,14 @@ export function CarouselWithContent() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-2xl md:text-4xl lg:text-5xl"
+              className="mb-4 text-2xl md:text-4xl lg:text-5xl font-poppins"
             >
               Savor Every Bite, Every Moment
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-6 opacity-80"
+              className="mb-6 opacity-80 font-poppins"
             >
               Experience the perfect blend of taste and ambiance.
             </Typography>
@@ -170,14 +170,14 @@ export function CarouselWithContent() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-2xl md:text-4xl lg:text-5xl"
+              className="mb-4 text-2xl md:text-4xl lg:text-5xl font-poppins"
             >
               Bringing Food to Your Doorstep
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-6 opacity-80"
+              className="mb-6 opacity-80 font-poppins"
             >
               Craving your favorite meal at home? We've got you covered.
             </Typography>
