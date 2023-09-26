@@ -48,7 +48,7 @@ export function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="transition-transform hover:scale-105 duration-500 first-line:text-md p-1 font-normal"
+        className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
         <a
           href="https://www.geeksforgeeks.org/courses/full-stack-node"
@@ -87,7 +87,7 @@ export function NavbarDefault() {
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button
-          className="transition-transform hover:scale-105 duration-500 font-poppins !hidden lg:!inline-block text-sm"
+          className="transition-transform hover:scale-105 duration-500 font-poppins !hidden lg:!inline-block text-sm bg-theme-color"
           size="sm"
         >
           <span className="flex items-center align-middle">
@@ -107,7 +107,7 @@ export function NavbarDefault() {
               fill="none"
               className="h-6 w-6"
               viewBox="0 0 24 24"
-              stroke="white"
+              stroke="currentcolor"
               strokeWidth={2}
             >
               <path
@@ -121,7 +121,7 @@ export function NavbarDefault() {
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
-              stroke="white"
+              stroke="currentcolor"
               strokeWidth={2}
             >
               <path
@@ -139,7 +139,7 @@ export function NavbarDefault() {
           <Button
             size="sm"
             fullWidth
-            className="font-poppins flex items-center justify-center mb-2 text-sm"
+            className="font-poppins flex items-center justify-center mb-2 text-sm bg-theme-color"
           >
             <span className="flex items-center align-middle">
               {myAccountIcon}

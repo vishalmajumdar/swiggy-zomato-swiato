@@ -23,7 +23,4 @@ font-family: 'Poppins', sans-serif;
   h6 {
     @apply font-playfairDisplay text-theme-color;
   }
-  button {
-    @apply !bg-theme-color;
-  }
 }
