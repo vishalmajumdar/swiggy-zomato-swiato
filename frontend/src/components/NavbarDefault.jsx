@@ -1,11 +1,10 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
+  Input,
   Typography,
   Button,
   IconButton,
-  Card,
   Collapse,
 } from "@material-tailwind/react";
 
@@ -40,8 +39,8 @@ export function NavbarDefault() {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
-        <a href="#" className="flex items-center">
-          About
+        <a href="/" className="flex items-center">
+          Home
         </a>
       </Typography>
       <Typography
@@ -51,11 +50,11 @@ export function NavbarDefault() {
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
         <a
-          href="https://www.geeksforgeeks.org/courses/full-stack-node"
+          href="#"
           className="font-poppins flex items-center hover:text-theme-color"
           target="_blank"
         >
-          GeeksforGeeks
+          Restaurants
         </a>
       </Typography>
       <Typography
@@ -64,12 +63,18 @@ export function NavbarDefault() {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
-        <a
-          href="https://github.com/vishalmajumdar/swiggy-zomato-swiato"
-          className="flex items-center"
-          target="_blank"
-        >
-          GitHub
+        <a href="#" className="flex items-center" target="_blank">
+          Cuisines
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
+      >
+        <a href="#" className="flex items-center" target="_blank">
+          Contact
         </a>
       </Typography>
     </ul>
