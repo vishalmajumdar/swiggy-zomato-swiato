@@ -24,14 +24,14 @@ export function CarouselWithContent() {
       loop="true"
       //   autoplay="false"
       //   autoplayDelay={2500}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.5 }}
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"
           color="white"
           size="lg"
           onClick={handlePrev}
-          className="!absolute top-2/4 left-4 -translate-y-2/4 "
+          className="!absolute top-2/4 left-4 -translate-y-2/4 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ export function CarouselWithContent() {
           color="white"
           size="lg"
           onClick={handleNext}
-          className="!absolute top-2/4 !right-4 -translate-y-2/4 !bg-transparent"
+          className="!absolute top-2/4 !right-4 -translate-y-2/4 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
