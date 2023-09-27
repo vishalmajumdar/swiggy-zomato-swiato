@@ -58,7 +58,7 @@ const Header = () => {
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
         <NavLink
-          to={"/foo"}
+          to={"/restaurants"}
           className={({ isActive }) => (isActive ? "text-theme-color" : "")}
         >
           Restaurants
@@ -71,7 +71,7 @@ const Header = () => {
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
         <NavLink
-          to={"/bar"}
+          to={"/cuisines"}
           className={({ isActive }) => (isActive ? "text-theme-color" : "")}
         >
           Cuisines
