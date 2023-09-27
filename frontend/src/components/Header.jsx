@@ -7,7 +7,7 @@ import {
   IconButton,
   Collapse,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -44,7 +44,12 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
-        <Link to={"/"}>Home</Link>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) => (isActive ? "text-theme-color" : "")}
+        >
+          Home
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -52,7 +57,12 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
-        <Link to={"/foo"}>Restaurants</Link>
+        <NavLink
+          to={"/foo"}
+          className={({ isActive }) => (isActive ? "text-theme-color" : "")}
+        >
+          Restaurants
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -60,7 +70,12 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
-        <Link to={"/bar"}>Cuisines</Link>
+        <NavLink
+          to={"/bar"}
+          className={({ isActive }) => (isActive ? "text-theme-color" : "")}
+        >
+          Cuisines
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -68,7 +83,12 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
-        <Link to={"/contact"}>Contact</Link>
+        <NavLink
+          to={"/contact"}
+          className={({ isActive }) => (isActive ? "text-theme-color" : "")}
+        >
+          Contact
+        </NavLink>
       </Typography>
     </ul>
   );
