@@ -7,6 +7,7 @@ import {
   IconButton,
   Collapse,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -43,9 +44,7 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
-        <a href="/" className="flex items-center">
-          Home
-        </a>
+        <Link to={"/"}>Home</Link>
       </Typography>
       <Typography
         as="li"
@@ -53,12 +52,7 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
-        <a
-          href="/foo"
-          className="font-poppins flex items-center hover:text-theme-color"
-        >
-          Restaurants
-        </a>
+        <Link to={"/foo"}>Restaurants</Link>
       </Typography>
       <Typography
         as="li"
@@ -66,9 +60,7 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
-        <a href="/bar" className="flex items-center">
-          Cuisines
-        </a>
+        <Link to={"/bar"}>Cuisines</Link>
       </Typography>
       <Typography
         as="li"
@@ -76,9 +68,7 @@ const Header = () => {
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
-        <a href="/contact" className="flex items-center">
-          Contact
-        </a>
+        <Link to={"/contact"}>Contact</Link>
       </Typography>
     </ul>
   );
@@ -97,16 +87,18 @@ const Header = () => {
         </Typography>
         {/* Here comes the Menu Items for Larger Screens */}
         <div className="hidden lg:block">{navList}</div>
-        {/* Here is the login button */}
-        <Button
-          className="transition-transform hover:scale-105 duration-500 font-poppins !hidden lg:!inline-block text-sm bg-theme-color"
-          size="sm"
-        >
-          <span className="flex items-center align-middle">
-            {login}
-            Login
-          </span>
-        </Button>
+        {/* Here is the login button */}{" "}
+        <Link to={"/login"}>
+          <Button
+            className="transition-transform hover:scale-105 duration-500 font-poppins !hidden lg:!inline-block text-sm bg-theme-color"
+            size="sm"
+          >
+            <span className="flex items-center align-middle">
+              {login}
+              Login
+            </span>
+          </Button>
+        </Link>
         {/* This is button for Mobile Menu Navigation i.e., Hamburger */}
         <IconButton
           variant="text"
@@ -153,17 +145,19 @@ const Header = () => {
           {/* This is the same menu list that we used for larger screens */}
           {navList}
           {/* Login Button for Mobile Menu Navigation */}
-          <Button
-            size="sm"
-            fullWidth
-            className="font-poppins flex items-center justify-center mb-2 text-sm bg-theme-color"
-          >
-            <span className="flex items-center align-middle">
-              {/* login svg icon */}
-              {login}
-              Login
-            </span>
-          </Button>
+          <Link to={"/login"}>
+            <Button
+              size="sm"
+              fullWidth
+              className="font-poppins flex items-center justify-center mb-2 text-sm bg-theme-color"
+            >
+              <span className="flex items-center align-middle">
+                {/* login svg icon */}
+                {login}
+                Login
+              </span>
+            </Button>
+          </Link>
         </div>
       </Collapse>
     </Navbar>

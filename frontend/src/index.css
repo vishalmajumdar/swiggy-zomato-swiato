@@ -11,6 +11,13 @@ font-family: 'Poppins', sans-serif;
 @tailwind utilities;
 
 @layer base {
+  html {
+    /* ugliest solution to manage layout shifts due to scrollbar */
+    /* overflow-y: scroll; */
+
+    /* this may not work on safari */
+    scrollbar-gutter: stable;
+  }
   body {
     @apply font-poppins;
   }
