@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "name": "The Gourmet Haven",
+    "description": "Delight your taste buds with a symphony of flavors at The Gourmet Haven. Our menu features a fusion of international cuisines, from Italian classics to spicy Asian delights.",
+    "address": "123 Main St, Cityville, CA 12345",
+    "phoneNumber": "+1 (123) 456-7890",
+    "openingHours": {
+      "Monday": "11:00 AM - 9:00 PM",
+      "Tuesday": "11:00 AM - 9:00 PM",
+      "Wednesday": "11:00 AM - 9:00 PM",
+      "Thursday": "11:00 AM - 9:00 PM",
+      "Friday": "11:00 AM - 10:00 PM",
+      "Saturday": "12:00 PM - 10:00 PM",
+      "Sunday": "12:00 PM - 8:00 PM"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "rating": 5,
+        "comment": "Amazing food and great service!"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "rating": 4,
+        "comment": "The pasta here is fantastic."
+      }
+    ],
+    "cuisineTypes": ["Italian", "Asian"],
+    "specialties": ["Pasta Carbonara", "Sushi Rolls"],
+    "imageURL": "https://www.example.com/images/restaurant1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "SpiceNest Indian Kitchen",
+    "description": "Spice up your life with the vibrant and aromatic dishes at SpiceNest Indian Kitchen. Indulge in the rich flavors of India with our selection of curries, biryanis, and tandoori specialties.",
+    "address": "456 Oak Ave, Townsville, CA 67890",
+    "phoneNumber": "+1 (456) 789-1234",
+    "openingHours": {
+      "Monday": "11:30 AM - 9:00 PM",
+      "Tuesday": "11:30 AM - 9:00 PM",
+      "Wednesday": "11:30 AM - 9:00 PM",
+      "Thursday": "11:30 AM - 9:00 PM",
+      "Friday": "11:30 AM - 10:00 PM",
+      "Saturday": "12:00 PM - 10:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Amit Patel",
+        "rating": 5,
+        "comment": "Authentic Indian flavors, loved it!"
+      },
+      {
+        "id": 2,
+        "name": "Lisa Johnson",
+        "rating": 4,
+        "comment": "Great biryani and friendly staff."
+      }
+    ],
+    "cuisineTypes": ["Indian"],
+    "specialties": ["Chicken Tikka Masala", "Vegetable Biryani"],
+    "imageURL": "https://www.example.com/images/restaurant2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "La Trattoria Italiana",
+    "description": "Experience the heart of Italy in every bite at La Trattoria Italiana. Our handcrafted pasta, wood-fired pizzas, and exquisite desserts will transport you to the charming streets of Tuscany.",
+    "address": "789 Elm St, Foodville, CA 56789",
+    "phoneNumber": "+1 (789) 123-4567",
+    "openingHours": {
+      "Monday": "12:00 PM - 8:00 PM",
+      "Tuesday": "12:00 PM - 8:00 PM",
+      "Wednesday": "12:00 PM - 8:00 PM",
+      "Thursday": "12:00 PM - 8:00 PM",
+      "Friday": "12:00 PM - 9:00 PM",
+      "Saturday": "1:00 PM - 9:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Maria Rossi",
+        "rating": 5,
+        "comment": "Authentic Italian food, a slice of Italy in town!"
+      },
+      {
+        "id": 2,
+        "name": "David Chen",
+        "rating": 4,
+        "comment": "Delicious pizzas, especially the margherita."
+      }
+    ],
+    "cuisineTypes": ["Italian"],
+    "specialties": ["Margherita Pizza", "Tiramisu"],
+    "imageURL": "https://www.example.com/images/restaurant3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sushi Sensation",
+    "description": "Dive into the world of sushi perfection at Sushi Sensation. Our skilled chefs craft sushi rolls that are as visually stunning as they are delicious.",
+    "address": "567 Pine Rd, Sushiville, CA 34567",
+    "phoneNumber": "+1 (567) 234-5678",
+    "openingHours": {
+      "Monday": "12:00 PM - 9:00 PM",
+      "Tuesday": "12:00 PM - 9:00 PM",
+      "Wednesday": "12:00 PM - 9:00 PM",
+      "Thursday": "12:00 PM - 9:00 PM",
+      "Friday": "12:00 PM - 10:00 PM",
+      "Saturday": "1:00 PM - 10:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Samantha Lee",
+        "rating": 5,
+        "comment": "Best sushi in town, hands down!"
+      },
+      {
+        "id": 2,
+        "name": "Michael Wang",
+        "rating": 4,
+        "comment": "Fresh and delicious sushi rolls."
+      }
+    ],
+    "cuisineTypes": ["Japanese", "Sushi"],
+    "specialties": ["Dragon Roll", "Sashimi Platter"],
+    "imageURL": "https://www.example.com/images/restaurant4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Veggie Delights",
+    "description": "At Veggie Delights, we celebrate the beauty of plant-based cuisine. Our menu is a colorful canvas of fresh, locally sourced vegetables, and innovative dishes that cater to vegans and vegetarians.",
+    "address": "101 Green St, Veggieville, CA 67890",
+    "phoneNumber": "+1 (101) 987-6543",
+    "openingHours": {
+      "Monday": "10:00 AM - 8:00 PM",
+      "Tuesday": "10:00 AM - 8:00 PM",
+      "Wednesday": "10:00 AM - 8:00 PM",
+      "Thursday": "10:00 AM - 8:00 PM",
+      "Friday": "10:00 AM - 9:00 PM",
+      "Saturday": "11:00 AM - 9:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Emily Brown",
+        "rating": 5,
+        "comment": "Amazing vegan options, I love it!"
+      },
+      {
+        "id": 2,
+        "name": "Daniel Kim",
+        "rating": 4,
+        "comment": "Healthy and delicious meals."
+      }
+    ],
+    "cuisineTypes": ["Vegetarian", "Vegan"],
+    "specialties": ["Veggie Burger", "Roasted Veggie Platter"],
+    "imageURL": "https://www.example.com/images/restaurant5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "The Burger Bistro",
+    "description": "Sink your teeth into burger bliss at The Burger Bistro. We take the classic burger to new heights with gourmet ingredients, handcrafted patties, and a variety of mouthwatering toppings.",
+    "address": "789 Oak St, Burgerland, CA 45678",
+    "phoneNumber": "+1 (789) 345-6789",
+    "openingHours": {
+      "Monday": "11:00 AM - 8:00 PM",
+      "Tuesday": "11:00 AM - 8:00 PM",
+      "Wednesday": "11:00 AM - 8:00 PM",
+      "Thursday": "11:00 AM - 8:00 PM",
+      "Friday": "11:00 AM - 9:00 PM",
+      "Saturday": "12:00 PM - 9:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Chris Evans",
+        "rating": 5,
+        "comment": "Awesome burgers, I keep coming back!"
+      },
+      {
+        "id": 2,
+        "name": "Sarah White",
+        "rating": 4,
+        "comment": "Tasty and juicy burgers."
+      }
+    ],
+    "cuisineTypes": ["Burgers", "American"],
+    "specialties": ["Classic Cheeseburger", "Bacon Avocado Burger"],
+    "imageURL": "https://www.example.com/images/restaurant6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Taste of Thailand",
+    "description": "Embark on a culinary journey to Thailand at Taste of Thailand. Our menu showcases the bold and aromatic flavors of Thai cuisine, from spicy curries to refreshing salads.",
+    "address": "345 Jasmine Rd, Thaiville, CA 23456",
+    "phoneNumber": "+1 (345) 567-8901",
+    "openingHours": {
+      "Monday": "11:30 AM - 9:00 PM",
+      "Tuesday": "11:30 AM - 9:00 PM",
+      "Wednesday": "11:30 AM - 9:00 PM",
+      "Thursday": "11:30 AM - 9:00 PM",
+      "Friday": "11:30 AM - 10:00 PM",
+      "Saturday": "12:00 PM - 10:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Natasha Brown",
+        "rating": 5,
+        "comment": "Authentic Thai flavors, I love the green curry!"
+      },
+      {
+        "id": 2,
+        "name": "James Wilson",
+        "rating": 4,
+        "comment": "Great pad thai and friendly staff."
+      }
+    ],
+    "cuisineTypes": ["Thai", "Asian"],
+    "specialties": ["Green Curry", "Pad Thai"],
+    "imageURL": "https://www.example.com/images/restaurant7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mediterranean Oasis",
+    "description": "Transport your senses to the Mediterranean at Mediterranean Oasis. Indulge in the sun-drenched flavors of Greece and Italy with our selection of mezze, kebabs, and pizzas.",
+    "address": "678 Olive Ave, Mediterranean City, CA 78901",
+    "phoneNumber": "+1 (678) 123-4567",
+    "openingHours": {
+      "Monday": "12:00 PM - 8:00 PM",
+      "Tuesday": "12:00 PM - 8:00 PM",
+      "Wednesday": "12:00 PM - 8:00 PM",
+      "Thursday": "12:00 PM - 8:00 PM",
+      "Friday": "12:00 PM - 9:00 PM",
+      "Saturday": "1:00 PM - 9:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Elena Katsouranis",
+        "rating": 5,
+        "comment": "Authentic Mediterranean flavors, delicious!"
+      },
+      {
+        "id": 2,
+        "name": "Mark Johnson",
+        "rating": 4,
+        "comment": "The kebabs are fantastic."
+      }
+    ],
+    "cuisineTypes": ["Mediterranean", "Greek", "Italian"],
+    "specialties": ["Hummus Platter", "Moussaka"],
+    "imageURL": "https://www.example.com/images/restaurant8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Sizzle Street BBQ",
+    "description": "Get ready for a barbecue feast at Sizzle Street BBQ. Our smokehouse specialties, mouthwatering ribs, and savory sides will satisfy your cravings for smoky, grilled goodness.",
+    "address": "890 Hickory Ln, BBQville, CA 12345",
+    "phoneNumber": "+1 (890) 234-5678",
+    "openingHours": {
+      "Monday": "11:00 AM - 8:00 PM",
+      "Tuesday": "11:00 AM - 8:00 PM",
+      "Wednesday": "11:00 AM - 8:00 PM",
+      "Thursday": "11:00 AM - 8:00 PM",
+      "Friday": "11:00 AM - 9:00 PM",
+      "Saturday": "12:00 PM - 9:00 PM",
+      "Sunday": "Closed"
+    },
+    "menuLink": "https://www.example.com/menu",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "John Carter",
+        "rating": 5,
+        "comment": "Best barbecue in town, hands down!"
+      },
+      {
+        "id": 2,
+        "name": "Samantha White",
+        "rating": 4,
+        "comment": "Delicious ribs and friendly staff."
+      }
+    ],
+    "cuisineTypes": ["Barbecue", "American"],
+    "specialties": ["Smoked Ribs", "Pulled Pork Sandwich"],
+    "imageURL": "https://www.example.com/images/restaurant9.jpg"
+  }
+]
