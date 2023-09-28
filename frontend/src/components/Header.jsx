@@ -98,12 +98,8 @@ const Header = () => {
     <Navbar className="mx-auto py-2 px-4 lg:px-8 lg:py-4 rounded-none shadow-sm">
       <div className="container mx-auto flex items-center justify-between text-theme-color">
         {/* This is logo or site title */}
-        <Typography
-          as="a"
-          href="/"
-          className="mr-4 cursor-pointer py-1.5 font-medium text-4xl font-playball"
-        >
-          Swiato
+        <Typography className="mr-4 cursor-pointer py-1.5 font-medium text-4xl font-playball">
+          <NavLink to={"/"}>Swiato</NavLink>
         </Typography>
         {/* Here comes the Menu Items for Larger Screens */}
         <div className="hidden lg:block">{navList}</div>
