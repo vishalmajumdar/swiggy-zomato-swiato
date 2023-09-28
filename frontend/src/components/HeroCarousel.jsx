@@ -28,7 +28,7 @@ export function HeroCarousel() {
       loop={true}
       autoplay={true}
       autoplayDelay={4500}
-      transition={{ type: "spring", duration: 1.75 }}
+      transition={{ type: "tween", duration: 1.75 }}
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"

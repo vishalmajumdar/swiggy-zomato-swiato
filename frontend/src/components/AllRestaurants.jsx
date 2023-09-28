@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { RestaurantCard } from "./RestaurantCard";
 import { Typography, Button, Spinner } from "@material-tailwind/react";
+import restaurantsData from "../data/restaurants.json";
 
 const AllRestaurants = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -55,7 +56,7 @@ const AllRestaurants = () => {
       <div className="m-12 flex flex-col items-center">
         <Typography
           variant="h2"
-          className="ont-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3"
+          className="ont-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl"
         >
           Loading...
         </Typography>
@@ -68,7 +69,7 @@ const AllRestaurants = () => {
       <div className="m-12 flex flex-col items-center">
         <Typography
           variant="h2"
-          className="ont-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3"
+          className="ont-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl"
         >
           Error: {error.message}
         </Typography>
@@ -80,12 +81,12 @@ const AllRestaurants = () => {
     <div className="m-12 flex flex-col items-center">
       <Typography
         variant="h2"
-        className="font-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3"
+        className="font-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl"
       >
         Feast Your Eyes on Choices
       </Typography>
       <div className="flex flex-wrap gap-8 justify-center">
-        {restaurants.slice(0, visibleRestaurants).map((restaurant) => (
+        {restaurantsData.slice(0, visibleRestaurants).map((restaurant) => (
           <div
             className="basis-[100%] sm:basis-[40%] lg:basis-[30%]"
             key={restaurant.id}
