@@ -19,7 +19,7 @@ const AllRestaurants = () => {
 
   useEffect(() => {
     // Fetch the JSON data
-    fetch("/src/data/restaurants.json")
+    fetch("./src/data/restaurants.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
