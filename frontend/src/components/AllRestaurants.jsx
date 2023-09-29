@@ -43,10 +43,7 @@ const AllRestaurants = () => {
             className="basis-[100%] sm:basis-[40%] lg:basis-[30%]"
             key={restaurant.id}
           >
-            <RestaurantCard
-              name={restaurant.name}
-              description={restaurant.description}
-            />
+            <RestaurantCard id={restaurant.id} />
           </div>
         ))}
         {visibleRestaurants < allRestaurants.length && (

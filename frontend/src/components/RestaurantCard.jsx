@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   Card,
   CardHeader,
@@ -7,6 +8,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { RestaurantDetails } from "./RestaurantDetails";
+import { AppContext } from "../App";
 
 function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -17,11 +19,15 @@ function truncateText(text, maxLength) {
 }
 
 export function RestaurantCard(props) {
+  const { allRestaurants } = useContext(AppContext);
+  console.log();
   return (
     <Card className="mt-6">
       <CardHeader
         color="blue-gray"
-        className="relative h-56 bg-[url('/banner3.webp')] bg-cover"
+        className={`relative h-56 bg-[url('${
+          allRestaurants[props.id - 1].imageURL
+        }')] bg-cover`}
         children={""}
       />
       <CardBody>
@@ -30,14 +36,14 @@ export function RestaurantCard(props) {
           color="blue-gray"
           className="mb-2 font-playfairDisplay text-center"
         >
-          {props.name}
+          {allRestaurants[props.id - 1].name}
         </Typography>
         <Typography className="font-poppins text-center">
-          {truncateText(props.description, 130)}
+          {truncateText(allRestaurants[props.id - 1].description, 130)}
         </Typography>
       </CardBody>
       <CardFooter className="pt-0 text-center">
-        <RestaurantDetails name={props.name} description={props.description} />
+        <RestaurantDetails id={props.id} />
       </CardFooter>
     </Card>
   );

@@ -31,7 +31,7 @@
     ],
     "cuisineTypes": ["Italian", "Asian"],
     "specialties": ["Pasta Carbonara", "Sushi Rolls"],
-    "imageURL": "https://www.example.com/images/restaurant1.jpg"
+    "imageURL": "/banner1.webp"
   },
   {
     "id": 2,
@@ -65,7 +65,7 @@
     ],
     "cuisineTypes": ["Indian"],
     "specialties": ["Chicken Tikka Masala", "Vegetable Biryani"],
-    "imageURL": "https://www.example.com/images/restaurant2.jpg"
+    "imageURL": "/banner2.webp"
   },
   {
     "id": 3,
@@ -99,7 +99,7 @@
     ],
     "cuisineTypes": ["Italian"],
     "specialties": ["Margherita Pizza", "Tiramisu"],
-    "imageURL": "https://www.example.com/images/restaurant3.jpg"
+    "imageURL": "/banner3.webp"
   },
   {
     "id": 4,
@@ -133,7 +133,7 @@
     ],
     "cuisineTypes": ["Japanese", "Sushi"],
     "specialties": ["Dragon Roll", "Sashimi Platter"],
-    "imageURL": "https://www.example.com/images/restaurant4.jpg"
+    "imageURL": "/banner4.webp"
   },
   {
     "id": 5,
@@ -167,7 +167,7 @@
     ],
     "cuisineTypes": ["Vegetarian", "Vegan"],
     "specialties": ["Veggie Burger", "Roasted Veggie Platter"],
-    "imageURL": "https://www.example.com/images/restaurant5.jpg"
+    "imageURL": "/banner5.webp"
   },
   {
     "id": 6,
@@ -201,7 +201,7 @@
     ],
     "cuisineTypes": ["Burgers", "American"],
     "specialties": ["Classic Cheeseburger", "Bacon Avocado Burger"],
-    "imageURL": "https://www.example.com/images/restaurant6.jpg"
+    "imageURL": "/banner6.webp"
   },
   {
     "id": 7,
@@ -235,7 +235,7 @@
     ],
     "cuisineTypes": ["Thai", "Asian"],
     "specialties": ["Green Curry", "Pad Thai"],
-    "imageURL": "https://www.example.com/images/restaurant7.jpg"
+    "imageURL": "/banner7.webp"
   },
   {
     "id": 8,
@@ -269,7 +269,7 @@
     ],
     "cuisineTypes": ["Mediterranean", "Greek", "Italian"],
     "specialties": ["Hummus Platter", "Moussaka"],
-    "imageURL": "https://www.example.com/images/restaurant8.jpg"
+    "imageURL": "/banner8.webp"
   },
   {
     "id": 9,
@@ -303,6 +303,6 @@
     ],
     "cuisineTypes": ["Barbecue", "American"],
     "specialties": ["Smoked Ribs", "Pulled Pork Sandwich"],
-    "imageURL": "https://www.example.com/images/restaurant9.jpg"
+    "imageURL": "/banner9.webp"
   }
 ]
