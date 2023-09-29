@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Button,
   Dialog,
@@ -12,6 +12,8 @@ import {
 import { AppContext } from "../App";
 
 export function RestaurantDetails(props) {
+  const location = useLocation();
+  const link = location.pathname;
   const { allRestaurants } = useContext(AppContext);
 
   const [open, setOpen] = React.useState(false);
@@ -21,7 +23,7 @@ export function RestaurantDetails(props) {
   return (
     <>
       <Button onClick={handleOpen} className="bg-theme-color font-poppins">
-        Read More
+        {link === "/" ? "Get Details" : "Read More"}
       </Button>
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader className="font-playfairDisplay flex justify-center">

@@ -1,4 +1,5 @@
 // This is the Hero Carousel component in which several components have been taken from material tailwind.
+import { Link } from "react-router-dom";
 import {
   Carousel,
   Typography,
@@ -103,14 +104,16 @@ export function HeroCarousel() {
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
               <OrderForm label="Order Now"></OrderForm>
-              <Button
-                size="md"
-                color="white"
-                variant="text"
-                className="font-poppins tracking-wider"
-              >
-                View Menu
-              </Button>
+              <Link to={"/restaurants"}>
+                <Button
+                  size="md"
+                  color="white"
+                  variant="text"
+                  className="font-poppins tracking-wider"
+                >
+                  Check Restaurants
+                </Button>{" "}
+              </Link>
             </div>
           </div>
         </div>
@@ -139,15 +142,16 @@ export function HeroCarousel() {
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
               <OrderForm label="Book a Table"></OrderForm>
-
-              <Button
-                size="md"
-                color="white"
-                variant="text"
-                className="font-poppins tracking-wider"
-              >
-                Our Specialties
-              </Button>
+              <Link to={"/cuisines"}>
+                <Button
+                  size="md"
+                  color="white"
+                  variant="text"
+                  className="font-poppins tracking-wider"
+                >
+                  Know Cuisines
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -176,15 +180,16 @@ export function HeroCarousel() {
             </Typography>
             <div className="flex justify-center gap-2 flex-col	 sm:flex-row">
               <OrderForm label="Order Delivery"></OrderForm>
-
-              <Button
-                size="md"
-                color="white"
-                variant="text"
-                className="font-poppins tracking-wider"
-              >
-                Explore Deals
-              </Button>
+              <Link to={"/contact"}>
+                <Button
+                  size="md"
+                  color="white"
+                  variant="text"
+                  className="font-poppins tracking-wider"
+                >
+                  Get in Touch
+                </Button>{" "}
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useLocation } from "react-router-dom";
 import {
   Card,
   CardHeader,
@@ -19,6 +20,8 @@ function truncateText(text, maxLength) {
 }
 
 export function RestaurantCard(props) {
+  const location = useLocation();
+  const link = location.pathname;
   const { allRestaurants } = useContext(AppContext);
   console.log();
   return (
@@ -43,7 +46,7 @@ export function RestaurantCard(props) {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0 text-center">
-        <RestaurantDetails id={props.id} />
+        {link !== "/" ? <RestaurantDetails id={props.id} /> : ""}
       </CardFooter>
     </Card>
   );
