@@ -45,6 +45,7 @@ const Header = () => {
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
         <NavLink
+          onClick={() => setOpenNav(false)}
           to={"/"}
           className={({ isActive }) => (isActive ? "text-theme-color" : "")}
         >
@@ -58,6 +59,7 @@ const Header = () => {
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal hover:text-theme-color"
       >
         <NavLink
+          onClick={() => setOpenNav(false)}
           to={"/restaurants"}
           className={({ isActive }) => (isActive ? "text-theme-color" : "")}
         >
@@ -71,6 +73,7 @@ const Header = () => {
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
         <NavLink
+          onClick={() => setOpenNav(false)}
           to={"/cuisines"}
           className={({ isActive }) => (isActive ? "text-theme-color" : "")}
         >
@@ -78,12 +81,14 @@ const Header = () => {
         </NavLink>
       </Typography>
       <Typography
+        onClick={() => setOpenNav(false)}
         as="li"
         variant="small"
         color="blue-gray"
         className="transition-transform hover:scale-105 duration-500 text-md font-poppins p-1 font-normal  hover:text-theme-color"
       >
         <NavLink
+          onClick={() => setOpenNav(false)}
           to={"/contact"}
           className={({ isActive }) => (isActive ? "text-theme-color" : "")}
         >
@@ -99,7 +104,9 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between text-theme-color">
         {/* This is logo or site title */}
         <Typography className="mr-4 cursor-pointer py-1.5 font-medium text-4xl font-playball">
-          <NavLink to={"/"}>Swiato</NavLink>
+          <NavLink onClick={() => setOpenNav(false)} to={"/"}>
+            Swiato
+          </NavLink>
         </Typography>
         {/* Here comes the Menu Items for Larger Screens */}
         <div className="hidden lg:block">{navList}</div>
@@ -163,6 +170,7 @@ const Header = () => {
           {/* Login Button for Mobile Menu Navigation */}
           <Link to={"/login"}>
             <Button
+              onClick={() => setOpenNav(false)}
               size="sm"
               fullWidth
               className="font-poppins flex items-center justify-center mb-2 text-sm bg-theme-color"
