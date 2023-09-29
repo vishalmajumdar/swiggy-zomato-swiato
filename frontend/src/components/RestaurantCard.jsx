@@ -23,13 +23,13 @@ export function RestaurantCard(props) {
   console.log();
   return (
     <Card className="mt-6">
-      <CardHeader
-        color="blue-gray"
-        className={`relative h-56 bg-[url('${
-          allRestaurants[props.id - 1].imageURL
-        }')] bg-cover`}
-        children={""}
-      />
+      <CardHeader color="blue-gray" className={`relative h-56`} children={""}>
+        <img
+          src={`/assets/images${allRestaurants[props.id - 1].imageURL}`}
+          alt=""
+          className="object-cover object-center w-full h-full"
+        />
+      </CardHeader>
       <CardBody>
         <Typography
           variant="h5"

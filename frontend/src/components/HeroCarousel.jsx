@@ -80,7 +80,7 @@ export function HeroCarousel() {
     >
       <div className="relative min-h-screen sm:min-h-[400px] w-full">
         <img
-          src="/banner1.webp"
+          src="/assets/images/banner1.webp"
           alt="image 1"
           className="h-screen w-full sm:h-[400px] object-cover"
         />
@@ -117,7 +117,7 @@ export function HeroCarousel() {
       </div>
       <div className="relative min-h-screen sm:min-h-[400px] w-full">
         <img
-          src="/banner2.webp"
+          src="/assets/images/banner2.webp"
           alt="image 1"
           className="h-screen w-full sm:h-[400px] object-cover"
         />
@@ -154,7 +154,7 @@ export function HeroCarousel() {
       </div>
       <div className="relative min-h-screen sm:min-h-[400px] w-full">
         <img
-          src="/banner3.webp"
+          src="/assets/images/banner3.webp"
           alt="image 1"
           className="h-screen w-full sm:h-[400px] object-cover"
         />
