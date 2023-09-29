@@ -6,6 +6,15 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { RestaurantDetails } from "./RestaurantDetails";
+
+function truncateText(text, maxLength) {
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  return text.slice(0, maxLength) + "...";
+}
 
 export function RestaurantCard(props) {
   return (
@@ -24,11 +33,11 @@ export function RestaurantCard(props) {
           {props.name}
         </Typography>
         <Typography className="font-poppins text-center">
-          {props.description}
+          {truncateText(props.description, 130)}
         </Typography>
       </CardBody>
       <CardFooter className="pt-0 text-center">
-        <Button className="font-poppins bg-theme-color">Read More</Button>
+        <RestaurantDetails name={props.name} description={props.description} />
       </CardFooter>
     </Card>
   );
