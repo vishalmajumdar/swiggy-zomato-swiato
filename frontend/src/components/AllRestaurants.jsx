@@ -56,7 +56,7 @@ const AllRestaurants = () => {
       <div className="m-12 flex flex-col items-center">
         <Typography
           variant="h2"
-          className="ont-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl"
+          className="font-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl"
         >
           Loading...
         </Typography>
@@ -69,7 +69,7 @@ const AllRestaurants = () => {
       <div className="m-12 flex flex-col items-center">
         <Typography
           variant="h2"
-          className="ont-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl"
+          className="font-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl"
         >
           Error: {error.message}
         </Typography>
@@ -81,7 +81,7 @@ const AllRestaurants = () => {
     <div className="m-12 flex flex-col items-center">
       <Typography
         variant="h2"
-        className="font-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl lg:text-5xl"
+        className="font-playfairDisplay mb-[60px] text-white bg-theme-color text-center px-4 py-2 rounded-xl shadow-lg mx-3 text-xl sm:text-3xl md:text-4xl"
       >
         Feast Your Eyes on Choices
       </Typography>
