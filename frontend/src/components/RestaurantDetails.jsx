@@ -6,6 +6,7 @@ import {
   DialogHeader,
   DialogBody,
   DialogFooter,
+  Typography,
 } from "@material-tailwind/react";
 
 export function RestaurantDetails(props) {
@@ -19,10 +20,18 @@ export function RestaurantDetails(props) {
         Read More
       </Button>
       <Dialog open={open} handler={handleOpen}>
-        <DialogHeader>{props.name}</DialogHeader>
-        <DialogBody divider>{props.description}</DialogBody>
+        <DialogHeader className="font-playfairDisplay">
+          {props.name}
+        </DialogHeader>
+        <DialogBody divider className="font-poppins overflow-auto max-h-80">
+          <Typography className="font-poppins">{props.description}</Typography>
+        </DialogBody>
         <DialogFooter>
-          <Button className="bg-theme-color" color="green" onClick={handleOpen}>
+          <Button
+            className="bg-theme-color font-poppins"
+            color="green"
+            onClick={handleOpen}
+          >
             <span>Close</span>
           </Button>
         </DialogFooter>
