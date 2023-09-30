@@ -1,8 +1,6 @@
 // This is the Home component for root domain where we import components to give it a nice look
 import HeroBanner from "../components/HeroBanner";
 import DisplayFilteredRestaurants from "../components/DisplayFilteredRestaurants";
-import { Button } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
