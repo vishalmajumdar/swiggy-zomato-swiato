@@ -27,13 +27,10 @@ let foo = "";
 
 // Connect to MongoDB
 mongoose
-  .connect(
-    `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@${DB_CLUSTER}.n9hlsdr.mongodb.net/`,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(`${MONGODB_URI}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Connected to MongoDB");
     foo = "DB Connected";
