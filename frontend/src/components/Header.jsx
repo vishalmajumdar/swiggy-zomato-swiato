@@ -111,7 +111,7 @@ const Header = () => {
         {/* Here comes the Menu Items for Larger Screens */}
         <div className="hidden lg:block">{navList}</div>
         {/* Here is the login button */}{" "}
-        <Link to={"/login"}>
+        <Link to={"/signin"}>
           <Button
             className="transition-transform hover:scale-105 duration-500 font-poppins !hidden lg:!inline-block text-sm bg-theme-color"
             size="sm"
@@ -168,7 +168,7 @@ const Header = () => {
           {/* This is the same menu list that we used for larger screens */}
           {navList}
           {/* Login Button for Mobile Menu Navigation */}
-          <Link to={"/login"}>
+          <Link to={"/signin"}>
             <Button
               onClick={() => setOpenNav(false)}
               size="sm"
@@ -178,7 +178,7 @@ const Header = () => {
               <span className="flex items-center align-middle">
                 {/* login svg icon */}
                 {login}
-                Login
+                Sign In
               </span>
             </Button>
           </Link>
