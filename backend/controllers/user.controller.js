@@ -54,3 +54,17 @@ exports.login = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+
+// Controller function to fetch a list of users
+exports.getUsers = async (req, res) => {
+  try {
+    // Fetch all users from the database
+    const users = await User.find();
+
+    // Send the list of users as a JSON response
+    res.status(200).json(users);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+};
