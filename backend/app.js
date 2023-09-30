@@ -1,5 +1,6 @@
 //  Add environment variables for security of the application
 require("dotenv").config();
+
 // Add Express
 const express = require("express");
 const mongoose = require("mongoose");
@@ -13,6 +14,14 @@ const FRONTEND_URL = process.env.FRONTEND_URL;
 
 // Initialize Express
 const app = express();
+
+const userRoutes = require("./routes/api/user.routes");
+
+// Middleware to parse JSON request bodies
+app.use(express.json());
+
+// Use the user routes
+app.use("/api/users", userRoutes); // You can specify a base URL here
 
 // Connect to MongoDB
 mongoose
@@ -98,6 +107,10 @@ app.get("/", (req, res) => {
 </html>
   `);
 });
+
+// app.get("/api/restaurants", (req, res) => {
+//   res.send("hi");
+// });
 
 // Initialize server
 app.listen(PORT, () => {
