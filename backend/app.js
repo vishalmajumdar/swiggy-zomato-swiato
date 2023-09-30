@@ -23,6 +23,8 @@ app.use(express.json());
 // Use the user routes
 app.use("/api/users", userRoutes); // You can specify a base URL here
 
+let foo = "";
+
 // Connect to MongoDB
 mongoose
   .connect(
@@ -34,6 +36,7 @@ mongoose
   )
   .then(() => {
     console.log("Connected to MongoDB");
+    foo = "DB Connected";
   })
   .catch((error) => {
     console.error("Error connecting to MongoDB : ", error);
@@ -102,6 +105,9 @@ app.get("/", (req, res) => {
           Click to Visit
         </button></a
       >
+      <p class="text-[#e3e3e3] font-body mt-3">${
+        foo ? foo : "DB Not Connected"
+      }</p>
     </div>
   </body>
 </html>
